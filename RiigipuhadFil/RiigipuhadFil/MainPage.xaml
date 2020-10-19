@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RiigipuhadFil;assembly=RiigipuhadFil"
+             x:Class="RiigipuhadFil.MainPage">
+    <TabbedPage.Children>
+        <local:January BackgroundColor="LightBlue"/>
+        <local:February BackgroundColor="LightBlue"/>
+        <local:March BackgroundColor="LightBlue"/>
+        <local:April BackgroundColor="LightBlue"/>
+        <local:May BackgroundColor="LightBlue"/>
+        <local:June BackgroundColor="LightBlue"/>
+        <local:July BackgroundColor="LightBlue"/>
+        <local:August BackgroundColor="LightBlue"/>
+        <local:September BackgroundColor="LightBlue"/>
+        <local:October BackgroundColor="LightBlue"/>
+        <local:November BackgroundColor="LightBlue"/>
+        <local:December BackgroundColor="LightBlue"/>
+    </TabbedPage.Children>
+</TabbedPage>
