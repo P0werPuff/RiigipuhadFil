@@ -16,7 +16,7 @@ namespace RiigipuhadFil
         public MainPage()
         {
             InitializeComponent();
-            var clr = Color.FromHex("#0ecc00");
+            var clr = Color.FromHex("#00CCFF");
             BarBackgroundColor = clr;
         }
     }

@@ -14,51 +14,43 @@ namespace RiigipuhadFil
     {
         public May()
         {
-            Button btn1, btn2;
+            Button btn1;
             InitializeComponent();
             AbsoluteLayout absoluteLayout = new AbsoluteLayout();
             absoluteLayout.Children.Add(
-                new Label { Text = "May 2021", FontSize = 30 },
+                new Label { Text = "Май 2021", FontSize = 30 },
                 new Rectangle(250, 20, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Days in the month", FontSize = 25 },
+                new Label { Text = "Дни в месяце", FontSize = 25 },
                 new Rectangle(30, 100, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "The calendar: 31 days", FontSize = 15 },
+                new Label { Text = "В к алендаре: 31 день", FontSize = 15 },
                 new Rectangle(30, 150, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Working days: 19 days", FontSize = 15 },
+                new Label { Text = "Рабочие дни: 19 дней", FontSize = 15 },
                 new Rectangle(30, 200, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Weekends and holidays: 12 days", FontSize = 15 },
+                new Label { Text = "Выходные и праздники: 12 дней", FontSize = 15 },
                 new Rectangle(30, 250, 230, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Weekends and holidays", FontSize = 25 },
+                new Label { Text = "Выходные и праздники", FontSize = 25 },
                 new Rectangle(380, 100, 280, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "The 1st: International Workers' Day", FontSize = 15 },
+                new Label { Text = "1-ого: Международный день трудящихся", FontSize = 15 },
                 new Rectangle(380, 150, 280, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "The 9th: Victory Day", FontSize = 15 },
-                new Rectangle(380, 200, 280, 60)
-            );
-            absoluteLayout.Children.Add(
-                btn1 = new Button { Text = "More", FontSize = 10, BackgroundColor = Color.FromHex("#FF3300") },
+                btn1 = new Button { Text = "Ёще", FontSize = 10, BackgroundColor = Color.FromHex("#00CCFF") },
                 new Rectangle(315, 143, 60, 35)
-            );
-            absoluteLayout.Children.Add(
-                btn2 = new Button { Text = "More", FontSize = 10, BackgroundColor = Color.FromHex("#FF3300") },
-                new Rectangle(315, 193, 60, 35)
+           
             );
             btn1.Clicked += Btn1_Clicked;
-            btn2.Clicked += Btn2_Clicked;
             Content = absoluteLayout;
         }
 
@@ -71,12 +63,6 @@ namespace RiigipuhadFil
                 " May Day subsequently became an annual event." +
                 " The 1904 Sixth Conference of the Second International, called on" + "all Social Democratic Party organisations and trade unions of all countries to demonstrate energetically on the First of May for the legal establishment of the eight-hour day, for the class demands of the proletariat, and for universal peace.", "OK");
         }
-        private void Btn2_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Victory Day", "Victory Day is a holiday that commemorates the surrender of Nazi Germany in 1945." +
-                " It was first inaugurated in the 15 republics of the Soviet Union, following the signing of the German Instrument of Surrender late in the evening on 8 May 1945 (after midnight, thus on 9 May Moscow Time)." +
-                " The Soviet government announced the victory early on 9 May after the signing ceremony in Berlin." +
-                " Although the official inauguration occurred in 1945, the holiday became a non-labour day only in 1965, and only in certain Soviet republics.", "OK");
-        }
+      
     }
 }

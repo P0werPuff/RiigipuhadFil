@@ -17,31 +17,31 @@ namespace RiigipuhadFil
             InitializeComponent();
             AbsoluteLayout absoluteLayout = new AbsoluteLayout();
             absoluteLayout.Children.Add(
-                new Label { Text = "November 2021", FontSize = 30 },
+                new Label { Text = "Ноябрьr 2021", FontSize = 30 },
                 new Rectangle(230, 20, 240, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Days in the month", FontSize = 25 },
+                new Label { Text = "Дни в месяце", FontSize = 25 },
                 new Rectangle(30, 100, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "The calendar: 30 days", FontSize = 15 },
+                new Label { Text = "Календаре: 30 дней", FontSize = 15 },
                 new Rectangle(30, 150, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Working days: 20 days", FontSize = 15 },
+                new Label { Text = "Рабочие дни: 20 дней", FontSize = 15 },
                 new Rectangle(30, 200, 200, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Weekends and holidays: 10 days", FontSize = 15 },
+                new Label { Text = "Выходные и праздники: 10 дней", FontSize = 15 },
                 new Rectangle(30, 250, 230, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "Weekends and holidays", FontSize = 25 },
+                new Label { Text = "Выходные и праздники", FontSize = 25 },
                 new Rectangle(380, 100, 280, 60)
             );
             absoluteLayout.Children.Add(
-                new Label { Text = "There are no holidays in this month", FontSize = 15 },
+                new Label { Text = "В этом месяце нет выходных", FontSize = 15 },
                 new Rectangle(380, 150, 280, 60)
             );
             Content = absoluteLayout;
